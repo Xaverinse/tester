@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill #2</title>
+    <style>
+        body {background-color: lightyellow;}
+        kbd {font-size: 20px; color: lightcoral; background-color: pink;}
+        h1 {color: #FA8FB6; font-weight: bolder;}
+        u, i, details {color: #FF9CC0;}
+        .class-form {width: 600px}
+        .btn {background-color: #E0F7FF; color: #31D2F2; text-align: center; width: 600px}
+    </style>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <h1>String Showcase</h1>
+    <br><br>
+
+    <h2>Name</h2>
+    <input type="text" id="name">
+
+    <h2>Age</h2>
+    <input type="number" id="age">
+
+    <h2>School</h2>
+    <input type="text" id="school">
+
+    <br><br>
+    <button onclick="generate_message()">Generate Message</button>
+
+ <div id="output" style="white-space: pre-line; margin-top:20px; border:1px solid #ff9d9d; padding:10px;"></div>
+
+
+    <py-config>
+[[fetch]]
+files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
